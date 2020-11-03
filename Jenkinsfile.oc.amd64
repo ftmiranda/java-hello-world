@@ -4,11 +4,11 @@ pipeline {
     }
 
     environment {
-        git = 'https://github.com/OpenShift-Z/hello-world-http-java.git'   // Replace with your fork of the hello-world code
-        oc_token =  credentials('octoken-x86')                                // Replace with OpenShift Token from GUI
-        pullSecret =  credentials('pull-secret')
+        git = 'https://github.com/ftmiranda/java-hello-world'   // Replace with your fork of the hello-world code
+        oc_token =  credentials('fm-octoken-x86')                                // Replace with OpenShift Token from GUI
+        pullSecret =  credentials('fm-pull-secret')
         ocp_server = 'https://c101-e.us-east.containers.cloud.ibm.com:32149'
-        app = 'java-hello-world'
+        app = 'fm-java-hello-world'
     }
 
     stages {
